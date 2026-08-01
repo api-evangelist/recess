@@ -1,0 +1,5 @@
+Canonical: https://recess.gg/.well-known/security.txt
+Contact: mailto:eng@recess.gg
+Encryption: https://assets.recess.gg/security/public.key
+Expires: 2026-01-01T00:00:00Z
+Preferred-Languages: en

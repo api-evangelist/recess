@@ -1,7 +1,27 @@
 aid: recess
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/recess.png
 name: Recess
-description: Recess is a company surfaced as a portfolio company of bloomberg-beta and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Recess (Recess Academy, recess.gg) is an online school for gifted and
+  neurodivergent students, including learners with ADHD, dyslexia, autism
+  spectrum, and anxiety. It combines core academics, interest-led classes,
+  small-group coworking sessions with an AI tutor, and a daily community hour,
+  with personalized pacing and world-class mentors. Recess is backed by
+  Bloomberg Beta. As of this enrichment pass the company operates a consumer
+  education web application and publishes no public API, developer portal, SDKs,
+  or OpenAPI surface; the only machine-discoverable surface found is a valid
+  RFC 9116 security.txt with a security contact.
 url: https://raw.githubusercontent.com/api-evangelist/recess/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Education
+- EdTech
+- Online School
+- Neurodivergent Learning
+- Gifted Education
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +49,24 @@ maintainers:
 common:
 - type: Website
   url: https://recess.gg/
+- type: SignUp
+  url: https://recess.gg/school/apply
+- type: Login
+  url: https://recess.gg/login
+- type: Pricing
+  url: https://recess.gg/school/tuition
+- type: SecurityTxt
+  url: well-known/recess-security.txt
+- type: WellKnown
+  url: well-known/recess-well-known.yml
+- type: DomainSecurity
+  url: security/recess-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/recess-vulnerability-disclosure.yml
+- type: Security
+  url: https://recess.gg/.well-known/security.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
