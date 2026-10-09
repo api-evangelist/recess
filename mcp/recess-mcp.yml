@@ -19,3 +19,58 @@ tools_note: No tool list captured. This manifest records a PROBED, reachable end
   not perform. Run signals/audit_mcp_authorship.py --probe to enumerate tools and settle platform-vs-provider
   authorship. Do NOT derive a tool list from the OpenAPI and store it here -- that is a candidate manifest,
   and it belongs under an X-MCPServerCandidate pointer.
+rfc9728:
+  endpoint: https://mcp.recess.gg/mcp
+  metadata_url: https://mcp.recess.gg/.well-known/oauth-protected-resource/mcp
+  discovered_via: WWW-Authenticate resource_metadata on an anonymous POST initialize
+  fetched: '2026-09-25'
+  http_status: 200
+  content_type: application/json
+  document:
+    resource: https://mcp.recess.gg/mcp
+    authorization_servers:
+    - https://mcp.recess.gg
+    scopes_supported:
+    - recess:chat-logs:read
+    - recess:administration:read
+    - recess:administration:write
+    - recess:app-primitives:read
+    - recess:app-primitives:write
+    - recess:applications:read
+    - recess:applications:write
+    - recess:apps:read
+    - recess:apps:write
+    - recess:billing:read
+    - recess:billing:write
+    - recess:cohorts:read
+    - recess:cohorts:write
+    - recess:content-library:read
+    - recess:content-library:write
+    - recess:enrollments:read
+    - recess:enrollments:write
+    - recess:goal-template-management:read
+    - recess:goal-template-management:write
+    - recess:goal-templates:read
+    - recess:goal-templates:write
+    - recess:learning:read
+    - recess:learning:write
+    - recess:mastery:read
+    - recess:mastery:write
+    - recess:onboarding:read
+    - recess:onboarding:write
+    - recess:quotes:read
+    - recess:quotes:write
+    - recess:request:read
+    - recess:school:read
+    - recess:school:write
+    - recess:skills:read
+    - recess:store-items:read
+    - recess:store-items:write
+    - recess:student-records:read
+    - recess:student-records:write
+    - recess:students:read
+    - recess:todos:assign
+    - recess:village:read
+    - recess:village:write
+    bearer_methods_supported:
+    - header
